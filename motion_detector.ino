@@ -49,7 +49,7 @@ void loop() {
   lcd.setCursor(0, 0);
   lcd.print(distanceCm);
   
-  if(distanceCm < 50 ){
+  if(distanceCm < 100 ){
     if(bleKeyboard.isConnected()){
       Serial.println("Motion Detected");
       bleKeyboard.write(KEY_F8);
