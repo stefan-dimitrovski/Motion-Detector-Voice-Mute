@@ -49,7 +49,6 @@ void loop() {
   lcd.setCursor(0, 0);
   lcd.print(distanceCm);
   
-  //TODO: Checking for motion
   if(distanceCm < 50 ){
     if(bleKeyboard.isConnected()){
       Serial.println("Motion Detected");
